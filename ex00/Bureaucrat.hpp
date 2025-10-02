@@ -17,11 +17,11 @@ class Bureaucrat
 		Bureaucrat(std::string name ,int gr);
 		class GradeTooLowException: public std::exception
 		{
-			virtual const char* what() const _GLIBCXX_NOTHROW;
+			const char* what() const _GLIBCXX_NOTHROW;
 		};
 		class GradeTooHighException: public std::exception
 		{
-			virtual const char* what() const _GLIBCXX_NOTHROW;
+			const char* what() const _GLIBCXX_NOTHROW;
 		};
 		std::string getname();
 		int getgrade();

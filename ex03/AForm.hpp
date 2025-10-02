@@ -22,15 +22,15 @@ class AForm
 		AForm(std::string name , int gr_sign, int gr_execute);
 		class GradeTooLowException: public std::exception
 		{
-			virtual const char* what() const _GLIBCXX_NOTHROW;
+			const char* what() const _GLIBCXX_NOTHROW;
 		};
 		class GradeTooHighException: public std::exception
 		{
-			virtual const char* what() const _GLIBCXX_NOTHROW;
+			const char* what() const _GLIBCXX_NOTHROW;
 		};
 		class FormNotSignedException: public std::exception
 		{
-			virtual const char* what() const _GLIBCXX_NOTHROW;
+			const char* what() const _GLIBCXX_NOTHROW;
 		};
 		std::string getname();
 		bool getsign() const;

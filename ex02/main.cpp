@@ -8,7 +8,7 @@ int main()
 	try
 	{
 		Bureaucrat a("Ousama" ,15);
-		AForm *b = new ShrubberyCreationFrom("school");
+		AForm *b = new ShrubberyCreationForm("school");
 		AForm *c = new RobotomyRequestForm("home");
 		AForm *d = new PresidentialPardonForm("home");
 		std::cout << a << std::endl;
